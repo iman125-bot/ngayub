@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kegiatan Pemuda Ohoi Ngayub - Memberdayakan Generasi Muda</title>
+    <style>
+        /* Reset dan Konfigurasi Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f8f9;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #35A79C 0%, black 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Navigasi */
+        .navbar {
+            background-color: #35A79C;
+            padding: 1rem 0;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: #f0f0f0;
+        }
+
+        /* Bagian Konten */
+        .section {
+            background-color: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            text-align: center;
+            color: #35A79C;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #35A79C;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Kartu Kegiatan */
+        .activities {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .activity-card {
+            width: 30%;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .activity-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .activity-card img {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+
+        /* Galeri */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .gallery-item {
+            width: calc(33.333% - 1rem);
+            max-height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .contact-info div {
+            margin: 0 1rem;
+        }
+
+        /* Responsif */
+        @media screen and (max-width: 768px) {
+            .activities, .navbar ul, .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .activity-card, .gallery-item {
+                width: 100%;
+            }
+            .navbar ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Kegiatan Pemuda Ohoi Ngayub</h1>
+            <p>Memberdayakan dan Mengembangkan Potensi Generasi Muda</p>
+        </div>
+    </header>
+
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#kegiatan">Kegiatan</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="container section">
+        <h2 class="section-title">Tentang Kami</h2>
+        <p>Pemuda Ohoi Ngayub adalah wadah pemberdayaan dan pengembangan potensi generasi muda di wilayah kami. Kami berkomitmen untuk membangun komunitas yang kuat, kreatif, dan berdaya saing melalui berbagai program yang komprehensif.</p>
+        <p>Visi kami adalah menciptakan generasi muda yang mandiri, inovatif, dan peduli terhadap pengembangan masyarakat lokal.</p>
+    </section>
+
+    <!-- Kegiatan -->
+    <section id="kegiatan" class="container section">
+        <h2 class="section-title">Program Kegiatan</h2>
+        <div class="activities">
+            <div class="activity-card">
+                <img src="satu.jpg" alt="Pelatihan Keterampilan">
+                <h3>Potong Daging</h3>
+                <p>"Gotong royong mempersiapkan hidangan spesial, suasana kekeluargaan di tengah alam. 🌿🍖 #Kebersamaan #Tradisi"</p>
+            </div>
+            <div class="activity-card">
+                <img src="posyandu.jpg" alt="Kepemimpinan Komunitas">
+                <h3>Posyandu Remaja</h3>
+                <p>"Para remaja sedang beraktivitas di Posyandu Remaja, didampingi oleh seorang kader. Mereka tampak antusias mengikuti kegiatan yang bertujuan meningkatkan kesehatan dan kesejahteraan generasi muda."</p>
+            </div>
+            <div class="activity-card">
+                <img src="dua.jpg" alt="Wirausaha Muda">
+                <h3>Pembuatan Pohon Natal</h3>
+                <p>Ketika kreativitas bertemu dengan daur ulang, jadilah pohon Natal unik dari botol bekas! 🌟🍾 #KreasiRamahLingkungan #DaurUlang"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="container section">
+        <h2 class="section-title">Galeri Kegiatan</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="posyandu.jpg" alt="Kegiatan Pemuda 1">
+            </div>
+            <div class="gallery-item">
+                <img src="tiga.jpg" alt="Kegiatan Pemuda 2">
+            </div>
+            <div class="gallery-item">
+                <img src="empat.jpg" alt="Kegiatan Pemuda 3">
+            </div>
+            <div class="gallery-item">
+                <img src="lima.jpg" alt="Kegiatan Pemuda 4">
+            </div>
+            <div class="gallery-item">
+                <img src="enam.jpg" alt="Kegiatan Pemuda 5">
+            </div>
+            <div class="gallery-item">
+                <img src="tujuh.jpg" alt="Kegiatan Pemuda 6">
+            </div>
+        </div>
+    </section>
+
+     <!-- video -->
+     <section id="video" class="container section">
+        <h2 class="section-title">Video Kegiatan</h2>
+        <div style="display: flex; justify-content: center; margin-top: 2rem;">
+            <video width="800" height="450" controls>
+                <source src="video.mp4" type="video/mp4">
+                Browser Anda tidak mendukung elemen video.
+            </video>
+        </div>
+        <p style="margin-top: 1rem; text-align: center;">Video Pemuda Ohoi dalam Kegiatan Pengembangan Masyarakat</p>
+    </section>
+    
+    <!-- Kontak -->
+    <section id="kontak" class="container section">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <form>
+            <div style="display: flex; flex-direction: column; max-width: 500px; margin: 0 auto;">
+                <input type="text" placeholder="Nama Lengkap" style="margin-bottom: 1rem; padding: 0.5rem;">
+                <input type="email" placeholder="Email" style="margin-bottom: 1rem; padding: 0.5rem;">
+                <textarea placeholder="Pesan Anda" style="margin-bottom: 1rem; padding: 0.5rem; height: 150px;"></textarea>
+                <button style="background-color: #35A79C; color: white; border: none; padding: 0.75rem; cursor: pointer;">Kirim Pesan</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <div>Email: pemudaohoi@gmail.com</div>
+                <div>Telepon: +62 8190 0000 0000</div>
+                <div>Alamat: Desa Ngayub, Kecamatan Manyew, Kabupaten Maluku Tenggara</div>
+            </div>
+            <p>&copy; 2024 Kegiatan Pemuda Ohoi Ngayub - Memberdayakan Generasi Muda</p>
+        </div>
+    </footer>
+
+    <!-- Catatan untuk Menambahkan Gambar -->
+    <!-- 
+    Untuk menambahkan gambar, ganti src pada tag <img> dengan path atau URL gambar yang sebenarnya.
+    Contoh: 
+    - Jika gambar ada di folder yang sama: <img src="nama-gambar.jpg" alt="Deskripsi Gambar">
+    - Jika gambar di subfolder: <img src="images/nama-gambar.jpg" alt="Deskripsi Gambar">
+    - Jika gambar dari internet: <img src="https://contoh.com/gambar.jpg" alt="Deskripsi Gambar">
+    -->
+</body>
+</html>
